@@ -1,0 +1,406 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tawhid Sadi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#ffb77d",
+                    "on-secondary-container": "#00616d",
+                    "on-tertiary": "#00344c",
+                    "tertiary-fixed-dim": "#85cfff",
+                    "surface-container": "#201f1f",
+                    "background": "#131313",
+                    "inverse-primary": "#904d00",
+                    "tertiary-container": "#00b5fc",
+                    "on-secondary-fixed-variant": "#004f58",
+                    "on-secondary": "#00363d",
+                    "on-tertiary-fixed": "#001e2e",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#004c6c",
+                    "on-background": "#e5e2e1",
+                    "primary-fixed-dim": "#ffb77d",
+                    "surface-container-highest": "#353534",
+                    "secondary": "#bdf4ff",
+                    "inverse-surface": "#e5e2e1",
+                    "on-secondary-fixed": "#001f24",
+                    "secondary-container": "#00e3fd",
+                    "surface-variant": "#353534",
+                    "surface-bright": "#393939",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-container": "#623200",
+                    "on-error": "#690005",
+                    "surface-container-low": "#1c1b1b",
+                    "primary-fixed": "#ffdcc3",
+                    "surface": "#131313",
+                    "on-surface": "#e5e2e1",
+                    "surface-dim": "#131313",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-primary-fixed": "#2f1500",
+                    "secondary-fixed-dim": "#00daf3",
+                    "on-primary-fixed-variant": "#6e3900",
+                    "error": "#ffb4ab",
+                    "outline": "#a48c7a",
+                    "primary-container": "#ff8c00",
+                    "outline-variant": "#564334",
+                    "surface-container-high": "#2a2a2a",
+                    "inverse-on-surface": "#313030",
+                    "tertiary-fixed": "#c7e7ff",
+                    "on-primary": "#4d2600",
+                    "tertiary": "#85cfff",
+                    "on-surface-variant": "#ddc1ae",
+                    "secondary-fixed": "#9cf0ff",
+                    "primary": "#ffb77d",
+                    "on-tertiary-container": "#004360"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "glass-padding": "32px",
+                    "unit": "8px",
+                    "section-padding": "120px",
+                    "section-gap": "80px",
+                    "container-max": "1440px",
+                    "gutter": "24px",
+                    "margin-desktop": "80px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "label-sm": ["JetBrains Mono"],
+                    "label-mono": ["JetBrains Mono"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Sora"],
+                    "display-lg-mobile": ["Sora"],
+                    "headline-md": ["Sora"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "label-mono": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bloom-shadow {
+            box-shadow: 0 0 30px rgba(255, 183, 125, 0.3);
+        }
+        .glass-card {
+            background: rgba(18, 18, 18, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(164, 139, 122, 0.1);
+        }
+        .glass-card:hover {
+            border-color: #ffb77d;
+            box-shadow: 0 0 40px rgba(255, 183, 125, 0.15);
+        }
+        .hero-mesh {
+            background-image: radial-gradient(at 0% 0%, rgba(255, 183, 125, 0.15) 0, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(0, 227, 253, 0.05) 0, transparent 50%);
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 183, 125, 0.4);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0e0e0e; }
+        ::-webkit-scrollbar-thumb { background: #353534; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ffb77d; }
+    
+        @keyframes shimmer-sweep {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        @keyframes glow-pulse {
+            0%, 100% { text-shadow: 0 0 10px rgba(255, 183, 125, 0.4); }
+            50% { text-shadow: 0 0 20px rgba(255, 183, 125, 0.7), 0 0 30px rgba(255, 183, 125, 0.3); }
+        }
+        .animate-shimmer-text {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shimmer-sweep 4s infinite linear, glow-pulse 3s infinite ease-in-out;
+            display: inline-block;
+        }
+        </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/20 shadow-[0_0_20px_rgba(255,183,125,0.1)]">
+<nav class="flex justify-between items-center w-full px-glass-padding py-4 max-w-container-max mx-auto">
+<a class="font-display-lg-mobile text-display-lg-mobile font-black tracking-tighter text-primary" href="#">TAWHID SADI</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#work">Work</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#skills">Skills</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#experience">Experience</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#vision">Vision</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95 bloom-shadow" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+</button>
+</nav>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden bg-surface/95 backdrop-blur-xl border-t border-outline-variant/20 px-glass-padding py-6 space-y-4" id="mobile-menu">
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#work" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Work</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#skills" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#experience" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#vision" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Vision</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+</div>
+</header>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative min-h-screen flex flex-col justify-center items-center text-center px-gutter pt-32 overflow-hidden hero-mesh" id="hero">
+<div class="absolute inset-0 z-0 pointer-events-none opacity-30">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-secondary/10 rounded-full blur-[100px]"></div>
+</div>
+<div class="z-10 max-w-4xl">
+<span class="font-label-sm text-label-sm text-primary tracking-[0.4em] uppercase mb-6 block">The Fusion of Precision &amp; Tech</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-glow mb-8">
+                    Crafting Experiences Through <span class="text-primary">Code</span> &amp; <span class="text-on-surface-variant">Culinary Art</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                    Bakery &amp; Pastry Chef | Future AI Developer | Cybersecurity Learner
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button 
+  onclick="document.querySelector('#portfolio').scrollIntoView({behavior: 'smooth'})"
+  class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold text-lg bloom-shadow transition-transform hover:-translate-y-1"
+>
+  View Portfolio
+</button>
+
+<button 
+  onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})"
+  class="border border-primary text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/10 transition-all"
+>
+  Contact Me
+</button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- Section 2: About Me -->
+<section class="py-section-padding px-glass-padding max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative group">
+<div class="absolute -inset-4 bg-primary/20 rounded-xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<img alt="Tawhid Sadi Culinary Work" class="relative rounded-xl w-full h-[600px] object-cover border border-outline-variant/30" data-alt="A cinematic close-up shot of a professional pastry chef meticulously plating a high-end dessert in a dark, moody kitchen. Soft orange ambient lighting catches the steam and fine sugar dust in the air. The style is hyper-realistic with deep shadows and vibrant warm highlights, evoking a sense of luxury and technical precision. The background is blurred to focus on the intricate craftsmanship of the food." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBazhoaIw0Oq24tn3AxHJZm24zrUx43OdO6lrcOxl6ITKuJp_tYCMs3f9bkzRI5eVM9fVMot6zF4mJ2wRngzhMCrbtQSVoubHQPQn917JfaXJh1HQryp9NTNkPrvNipo_JfgVFy6rUY9FONcwTmO9x-5Hs5ElYH-pvHIByKET0aL587Py7NEIU9fdRXLuDHMiB-6raM2c6SOaboG5RQdqFZvL1KWgg4gWL960LMvWAaxnxHCzqZ27lJ0e5_QU_ParDoJbfhA5b9Wkg">
+</div>
+<div class="md:col-span-7">
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Architecting the Flavor of Innovation</h2>
+<div class="space-y-6 text-on-surface-variant font-body-lg text-body-lg">
+<p class="">My journey is a unique blend of michelin-star precision and digital defense. With a solid foundation in <span class="text-on-surface">Bakery &amp; Pastry Arts</span> from the National Hotel &amp; Tourism Training Institute (NHTTI), I learned that excellence requires patience and perfect timing.</p>
+<p class="">Transitioning into the world of bits and bytes, I am currently exploring the frontiers of <span class="text-on-surface">AI Development and Cybersecurity</span>. My experience at the <span class="text-on-surface">Biman Flight Catering Center (BFCC)</span> instilled in me a rigorous work ethic and the ability to thrive in high-pressure environments.</p>
+<p class="">I view filmmaking and technology through the same lens as a perfectly fermented sourdough: they are all forms of storytelling that require craft, structure, and a touch of alchemy.</p>
+</div>
+<div class="mt-12 flex gap-4">
+<div class="bg-surface-container px-4 py-2 rounded-full border border-outline-variant/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="font-label-sm text-label-sm">BFCC Certified</span>
+</div>
+<div class="bg-surface-container px-4 py-2 rounded-full border border-outline-variant/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">terminal</span>
+<span class="font-label-sm text-label-sm">Cyber Learner</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Skills -->
+<section class="py-section-padding bg-surface-container-lowest" id="skills">
+<div class="max-w-container-max mx-auto px-glass-padding">
+<div class="mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Skills</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Skill Card 1 -->
+<div class="glass-card p-10 rounded-xl transition-all duration-500 group">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">bakery_dining</span>
+<h3 class="font-headline-md text-2xl text-on-surface mb-4">Bakery &amp; Pastry</h3>
+<p class="text-on-surface-variant mb-6">Mastery of dough fermentation, high-end plating, and kitchen operations management.</p>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[95%] shadow-[0_0_10px_#ffb77d]"></div>
+</div>
+</div>
+<!-- Skill Card 2 -->
+<div class="glass-card p-10 rounded-xl transition-all duration-500 group">
+<span class="material-symbols-outlined text-tertiary text-5xl mb-6 block group-hover:scale-110 transition-transform">security</span>
+<h3 class="font-headline-md text-2xl text-on-surface mb-4">Cybersecurity Basic</h3>
+<p class="text-on-surface-variant mb-6">Understanding of network defense, threat modeling, and ethical hacking fundamentals.</p>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[60%] shadow-[0_0_10px_#85cfff]"></div>
+</div>
+</div>
+<!-- Skill Card 3 -->
+<div class="glass-card p-10 rounded-xl transition-all duration-500 group">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">groups</span>
+<h3 class="font-headline-md text-2xl text-on-surface mb-4">Teamwork</h3>
+<p class="text-on-surface-variant mb-6">Proven leadership and collaborative skills in fast-paced industrial catering environments.</p>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[90%] shadow-[0_0_10px_#ffb77d]"></div>
+</div>
+</div>
+<!-- Skill Card 4 -->
+<div class="glass-card p-10 rounded-xl transition-all duration-500 group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block group-hover:scale-110 transition-transform">description</span>
+<h3 class="font-headline-md text-2xl text-on-surface mb-4">Office Suites</h3>
+<p class="text-on-surface-variant mb-6">Expertise in Microsoft Office and Google Workspace for technical documentation.</p>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[85%] shadow-[0_0_10px_#bdf4ff]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Experience Timeline -->
+<section class="py-section-padding px-glass-padding max-w-container-max mx-auto" id="experience">
+<div class="text-center mb-20">
+<h2 class="font-headline-md text-headline-md text-primary">Professional Odyssey</h2>
+</div>
+<div class="relative border-l border-outline-variant/30 ml-4 md:ml-0 md:left-1/2">
+<!-- Timeline Item 1 -->
+<div class="mb-16 relative md:w-1/2 md:pr-12 md:text-right md:translate-x-[-100%]">
+<div class="absolute top-0 -left-1.5 md:-right-1.5 md:left-auto w-3 h-3 bg-primary rounded-full shadow-[0_0_10px_#ffb77d]"></div>
+<span class="font-label-sm text-label-sm text-primary-fixed mb-2 block">2022 — 2023</span>
+<h3 class="font-headline-md text-2xl text-on-surface mb-2">BIMAN FLIGHT CATERING CENTER</h3>
+<p class="font-body-md text-on-surface-variant">Applied culinary expertise in a high-volume, international airline catering environment, ensuring michelin-grade quality standards for thousands of daily passengers.</p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="mb-16 relative md:w-1/2 md:pl-12">
+<div class="absolute top-0 -left-1.5 w-3 h-3 bg-secondary rounded-full shadow-[0_0_10px_#00e3fd]"></div>
+<span class="font-label-sm text-label-sm text-secondary mb-2 block">Foundational Training</span>
+<h3 class="font-headline-md text-2xl text-on-surface mb-2">National Hotel &amp; Tourism Training Institute</h3>
+<p class="font-body-md text-on-surface-variant">Intensive professional training in Bakery &amp; Pastry Arts, focusing on both traditional techniques and modern gastronomic innovation.</p>
+</div>
+</div>
+</section>
+<!-- Section 5: Vision -->
+<section class="py-section-padding px-glass-padding max-w-container-max mx-auto text-center" id="vision">
+<div class="max-w-3xl mx-auto">
+  <span class="font-label-sm text-label-sm text-primary tracking-[0.4em] uppercase mb-6 block">Where I'm Headed</span>
+  <h2 class="font-headline-md text-headline-md text-on-surface mb-8">Building the Future, One Layer at a Time</h2>
+  <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+    My vision is to merge culinary craftsmanship with cutting-edge technology — developing AI tools for the hospitality industry, building secure digital platforms, and continuing to create experiences that delight both the senses and the mind.
+  </p>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+    <div class="glass-card p-8 rounded-xl">
+      <span class="material-symbols-outlined text-primary text-4xl mb-4 block">smart_toy</span>
+      <h3 class="font-headline-md text-lg text-on-surface mb-2">AI Development</h3>
+      <p class="text-on-surface-variant text-sm">Building intelligent tools for the hospitality and food industry.</p>
+    </div>
+    <div class="glass-card p-8 rounded-xl">
+      <span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">shield</span>
+      <h3 class="font-headline-md text-lg text-on-surface mb-2">Cybersecurity</h3>
+      <p class="text-on-surface-variant text-sm">Protecting digital environments with ethical hacking and defense.</p>
+    </div>
+    <div class="glass-card p-8 rounded-xl">
+      <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">restaurant</span>
+      <h3 class="font-headline-md text-lg text-on-surface mb-2">Culinary Innovation</h3>
+      <p class="text-on-surface-variant text-sm">Pushing the boundaries of pastry arts with modern techniques.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Section 6: Contact -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="contact">
+<div class="glass-card rounded-[32px] overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 lg:p-20 bg-gradient-to-br from-surface-container to-black">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Let's Create Together</h2>
+<p class="text-on-surface/60 mb-12 font-body-lg">Whether you're looking for a dedicated chef or a collaborative mind for your next tech project, my door is always open.</p>
+<ul class="space-y-8">
+<li class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary" data-icon="alternate_email">alternate_email</span>
+</div>
+<div>
+<p class="font-label-mono text-[10px] text-on-surface/40 uppercase">Email</p>
+<p class="font-body-md text-on-surface">tawhidsadi12@gmail.com</p>
+</div>
+</li>
+<li class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+</div>
+<div>
+<p class="font-label-mono text-[10px] text-on-surface/40 uppercase">Phone</p>
+<p class="font-body-md text-on-surface">+8801976867125</p>
+</div>
+</li>
+<li class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-label-mono text-[10px] text-on-surface/40 uppercase">Location</p>
+<p class="font-body-md text-on-surface">Araihazar, Narayanganj, Bangladesh</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="p-12 lg:p-20 border-l border-white/5 bg-black/40">
+<form class="space-y-8">
+<div class="relative group">
+<label class="font-label-mono text-label-mono text-on-surface/40 mb-2 block uppercase tracking-widest group-focus-within:text-primary transition-colors">Full Name</label>
+<input class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-primary transition-all font-body-md text-on-surface" placeholder="John Doe" type="text"/>
+</div>
+<div class="relative group">
+<label class="font-label-mono text-label-mono text-on-surface/40 mb-2 block uppercase tracking-widest group-focus-within:text-primary transition-colors">Email Address</label>
+<input class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-primary transition-all font-body-md text-on-surface" placeholder="john@example.com" type="email"/>
+</div>
+<div class="relative group">
+<label class="font-label-mono text-label-mono text-on-surface/40 mb-2 block uppercase tracking-widest group-focus-within:text-primary transition-colors">Your Message</label>
+<textarea class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-primary transition-all font-body-md text-on-surface resize-none" placeholder="Tell me about your project..." rows="4"></textarea>
+</div>
+<button class="w-full py-5 bg-primary-container text-white font-headline-md text-body-md rounded-lg shadow-[0_10px_30px_rgba(255,107,0,0.2)] hover:shadow-[0_20px_40px_rgba(255,107,0,0.3)] hover:-translate-y-1 transition-all duration-300 uppercase tracking-widest">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface border-t border-white/5 py-section-gap w-full">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-desktop max-w-container-max mx-auto items-center">
+    <div>
+      <h2 class="text-headline-md font-headline-md text-primary mb-4">Tawhid Sadi</h2>
+      <p class="font-body-md text-on-surface/50 max-w-md"> </p>
+    </div>
+    <div class="flex flex-col md:items-end gap-8">
+      <div class="flex gap-8">
+        <a class="text-on-surface/50 font-label-mono text-label-mono uppercase tracking-[0.2em] hover:text-secondary transition-all duration-300 hover:translate-y-[-2px]"href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a class="text-on-surface/50 font-label-mono text-label-mono uppercase tracking-[0.2em] hover:text-secondary transition-all duration-300 hover:translate-y-[-2px]"href="https://wa.me/8801976867125" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a class="text-on-surface/50 font-label-mono text-label-mono uppercase tracking-[0.2em] hover:text-secondary transition-all duration-300 hover:translate-y-[-2px]"href="https://github.com/tawhidsadi12" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="text-on-surface/50 font-label-mono text-label-mono uppercase tracking-[0.2em] hover:text-secondary transition-all duration-300 hover:translate-y-[-2px]"href="https://www.instagram.com/tawhidsadi12" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <p class="font-label-mono text-[10px] text-on-surface/30"></p>
+    </div>
+  </div>
+</footer>
